@@ -1,3 +1,7 @@
+## 0.0.17
+
+* compileSdkVersion 修改为 34，支持flutter 3.24
+
 ## 0.0.1
 
 * 支持flutter 3.0.0
