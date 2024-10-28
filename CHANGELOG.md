@@ -1,3 +1,11 @@
+## 0.0.18
+
+* Android platform adapts to AGP 8.0, adds namespace parameters
+
+## 0.0.17
+
+* compileSdkVersion 修改为 34，支持flutter 3.24
+
 ## 0.0.1
 
 * 支持flutter 3.0.0
