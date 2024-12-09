@@ -1,3 +1,7 @@
+## 0.0.19
+
+* Modify kotlinOptions to Java 1.8
+
 ## 0.0.18
 
 * Android platform adapts to AGP 8.0, adds namespace parameters
