@@ -42,13 +42,13 @@ class FlutterPluginRecordPlugin : FlutterPlugin, MethodCallHandler, ActivityAwar
     var activity:Activity? = null
 
     companion object {
-        //support embedding v1
-        @JvmStatic
-        fun registerWith(registrar: Registrar) {
-            val plugin = initPlugin(registrar.messenger())
-            plugin.activity= registrar.activity()
-            registrar.addRequestPermissionsResultListener(plugin)
-        }
+//        //support embedding v1
+//        @JvmStatic
+//        fun registerWith(registrar: Registrar) {
+//            val plugin = initPlugin(registrar.messenger())
+//            plugin.activity= registrar.activity()
+//            registrar.addRequestPermissionsResultListener(plugin)
+//        }
 
         private fun initPlugin(binaryMessenger: BinaryMessenger):FlutterPluginRecordPlugin {
             val channel = createMethodChannel(binaryMessenger)
