@@ -14,21 +14,21 @@ class MyApp extends StatelessWidget {
       theme: new ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: new MyHomePage(title: 'Flutter Demo Home Page'),
+      home: new MyHomePage(title: 'Flutter Demo Home Page', key: UniqueKey()),
       routes: {
         "RecordScreen": (BuildContext context) => new RecordScreen(),
         "RecordMp3Screen": (BuildContext context) => new RecordMp3Screen(),
         "WeChatRecordScreen": (BuildContext context) =>
             new WeChatRecordScreen(),
         "PathProviderScreen": (BuildContext context) =>
-            new PathProviderScreen(),
+            new PathProviderScreen(key: UniqueKey()),
       },
     );
   }
 }
 
 class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
+  MyHomePage({required Key key, required this.title}) : super(key: key);
   final String title;
 
   @override
@@ -51,22 +51,22 @@ class _MyHomePageState extends State<MyHomePage> {
         child: new Column(
           mainAxisSize: MainAxisSize.min,
           children: <Widget>[
-            new FlatButton(
+            new TextButton(
                 onPressed: () {
                   Navigator.pushNamed<dynamic>(context, "RecordScreen");
                 },
                 child: new Text("进入语音录制界面")),
-            new FlatButton(
+            new TextButton(
                 onPressed: () {
                   Navigator.pushNamed<dynamic>(context, "RecordMp3Screen");
                 },
                 child: new Text("进入录制mp3模式")),
-            new FlatButton(
+            new TextButton(
                 onPressed: () {
                   Navigator.pushNamed<dynamic>(context, "WeChatRecordScreen");
                 },
                 child: new Text("进入仿微信录制界面")),
-            new FlatButton(
+            new TextButton(
                 onPressed: () {
                   Navigator.pushNamed<dynamic>(context, "PathProviderScreen");
                 },
