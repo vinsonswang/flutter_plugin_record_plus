@@ -1,3 +1,7 @@
+## 0.0.21
+
+* Remove unresolved reference: Registrar
+
 ## 0.0.20
 
 * Remove embedding v1 registration method.
